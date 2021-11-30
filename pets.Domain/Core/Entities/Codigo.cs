@@ -15,4 +15,5 @@ namespace pets.Domain.Core.Entities
 
         public virtual Sponsor IdSponsorNavigation { get; set; }
     }
+    
 }

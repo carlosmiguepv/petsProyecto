@@ -6,6 +6,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using pets.Domain.Core.DTOs;
+using pets.Domain.Core.Entities;
 using pets.Domain.Core.Interfaces;
 
 namespace pets.API.Controllers
@@ -29,9 +30,52 @@ namespace pets.API.Controllers
         {
             var adoptars = await _adoptarRepository.GetAdoptars();
 
-            //var adoptarsList = _mapper.Map<IEnumerable<AdministradorDTO>>(adoptars);
+            var adoptarsList = _mapper.Map<IEnumerable<AdoptarDTO>>(adoptars);
 
-            return Ok(adoptars);
+            return Ok(adoptarsList);
+        }
+
+        //Buscar
+        [HttpGet]
+        [Route("GetAdoptarsById/{id}")]
+        public async Task<IActionResult> GetAdoptarsById(int id)
+        {
+            var adoptar = await _adoptarRepository.GetAdoptarsById(id);
+            if (adoptar == null)
+                return NotFound();
+            var adoptarDTO = _mapper.Map<AdoptarDTO>(adoptar);
+            return Ok(adoptarDTO);
+        }
+
+        //Agregar
+        [HttpPost]
+        [Route("PostAdoptar")]
+        public async Task<IActionResult> PostAdopter(AdoptarPostDTO adoptarDTO)
+        {
+            var adoptar = _mapper.Map<Adoptar>(adoptarDTO);
+            await _adoptarRepository.Insert(adoptar);
+            return Ok(adoptar);
+        }
+
+        //Actualizar
+        [HttpPut]
+        [Route("PutAdministrador")]
+        public async Task<IActionResult> PutAdoptor(AdoptarDTO adoptarDTO)
+        {
+            var adoptar = _mapper.Map<Adoptar>(adoptarDTO);
+            await _adoptarRepository.Update(adoptar);
+            return Ok(adoptar);
+        }
+
+        //Eliminar
+        [HttpDelete]
+        [Route("DeleteAdoptar")]
+        public async Task<IActionResult> DeleteAdoptar(int id)
+        {
+            var result = await _adoptarRepository.Delete(id);
+            if (!result)
+                return NotFound();
+            return NoContent();
         }
     }
 }

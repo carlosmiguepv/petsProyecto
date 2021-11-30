@@ -56,5 +56,26 @@ namespace pets.API.Controllers
             await _administradorRepository.Insert(administrador);
             return Ok(administrador);
         }
+
+        //Actualizar
+        [HttpPut]
+        [Route("PutAdministrador")]
+        public async Task<IActionResult> PutCustomer(AdministradorDTO administradorDTO)
+        {
+            var administrador = _mapper.Map<Administrador>(administradorDTO);
+            await _administradorRepository.Update(administrador);
+            return Ok(administrador);
+        }
+
+        //Eliminar
+        [HttpDelete]
+        [Route("DeleteAdministrador")]
+        public async Task<IActionResult> DeleteAdministrador(int id)
+        {
+            var result = await _administradorRepository.Delete(id);
+            if (!result)
+                return NotFound();
+            return NoContent();
+        }
     }
 }

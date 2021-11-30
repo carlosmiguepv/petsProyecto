@@ -44,6 +44,15 @@ namespace pets.API
 
             services.AddTransient<IAdministradorRepository, AdministradorRepository>();
             services.AddTransient<IAdoptarRepository, AdoptarRepository>();
+            services.AddTransient<ICodigoRepository, CodigoRepository>();
+            services.AddTransient<IComentarioRepository, ComentarioRepository>();
+            services.AddTransient<IMascotaRepository, MascotaRepository>();
+            services.AddTransient<IPaisRepository, PaisRepository>();
+            services.AddTransient<IPublicacionRepository, PublicacionRepository>();
+            services.AddTransient<IRazaRepository, RazaRepository>();
+            services.AddTransient<ISponsorRepository, SponsorRepository>();
+            services.AddTransient<ITipoRepository, TipoRepository>();
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 
             services.AddAutoMapper(typeof(AutomapperProfile));
 
