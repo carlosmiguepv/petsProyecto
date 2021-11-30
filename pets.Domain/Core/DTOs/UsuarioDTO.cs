@@ -35,4 +35,114 @@ namespace pets.Domain.Core.DTOs
         public bool? GeneroUsuario { get; set; }
         public string FotoUsuario { get; set; }
     }
+
+    public class usuario11DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+
+    }
+
+    public class usuario12DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+        public string FotoUsuario { get; set; }
+
+    }
+    public class usuario13DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+    }
+    public class usuario14DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+        public string FotoUsuario { get; set; }
+    }
+    public class usuario15DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+    }
+    public class usuario16DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+        public string FotoUsuario { get; set; }
+    }
+    public class usuario17DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+        public string FotoUsuario { get; set; }
+    }
+    public class usuario18DTO
+    {
+        public string NombreUsuario { get; set; }
+    }
+    public class usuario19DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+        public string FotoUsuario { get; set; }
+    }
+    public class usuario20DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+        public string FotoUsuario { get; set; }
+    }
+    public class usuario21DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+        public string FotoUsuario { get; set; }
+    }
+    public class usuario22DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+        public string FotoUsuario { get; set; }
+    }
+    public class Usuario27DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuario { get; set; }
+        public string CelularUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+        public string FotoUsuario { get; set; }
+    }
+    public class usuario34DTO
+    {
+        public string FotoUsuario { get; set; }
+    }
+    public class usuario39DTO
+    {
+        public string NombreUsuario { get; set; }
+        public string CorreoUsuario { get; set; }
+    }
 }

@@ -21,4 +21,13 @@ namespace pets.Domain.Core.DTOs
         public int IdUsuario { get; set; }
         public string DocumentoAdoptar { get; set; }
     }
+
+    public class adoptar27DTO
+    {
+        public string DocumentoAdoptar { get; set; }
+    }
+    public class adoptar44DTO
+    {
+        public string DocumentoAdoptar { get; set; }
+    }
 }

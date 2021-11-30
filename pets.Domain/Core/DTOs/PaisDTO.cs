@@ -19,4 +19,58 @@ namespace pets.Domain.Core.DTOs
         public string NombrePais { get; set; }
         public string CodigoPais { get; set; }
     }
+
+    public class pais8DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais11DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais12DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais13DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais14DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais15DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais16DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais17DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais19DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais20DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais21DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais22DTO
+    {
+        public string NombrePais { get; set; }
+    }
+    public class pais27DTO
+    {
+        public string NombrePais { get; set; }
+    }
+
 }

@@ -21,7 +21,15 @@ namespace pets.Domain.Infrastructure.Repositories
 
         public async Task<IEnumerable<Mascota>> GetMascotas()
         {
-            //using var data = new SalesContext();
+
+            return await _context.Mascota.ToListAsync();
+
+        }
+
+        public async Task<IEnumerable<Mascota>> GetMascotasPerdida()
+        {
+
+
             return await _context.Mascota.ToListAsync();
 
         }

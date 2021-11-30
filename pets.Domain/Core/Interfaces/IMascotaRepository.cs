@@ -9,6 +9,7 @@ namespace pets.Domain.Core.Interfaces
         Task<bool> Delete(int id);
         Task<IEnumerable<Mascota>> GetMascotas();
         Task<Mascota> GetMascotasById(int id);
+        Task<IEnumerable<Mascota>> GetMascotasPerdida();
         Task Insert(Mascota mascota);
         Task<bool> Update(Mascota mascota);
     }

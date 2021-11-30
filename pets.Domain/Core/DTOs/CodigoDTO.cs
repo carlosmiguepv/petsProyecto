@@ -22,4 +22,9 @@ namespace pets.Domain.Core.DTOs
         public int CantidadCodigo { get; set; }
         public int IdSponsor { get; set; }
     }
+    public class codigo48DTO
+    {
+        public int CantidadCodigo { get; set; }
+    }
+
 }

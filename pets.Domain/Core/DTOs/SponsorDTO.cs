@@ -29,4 +29,9 @@ namespace pets.Domain.Core.DTOs
         public string LogoSponsor { get; set; }
     }
 
+    public class sponsor46DTO
+    {
+        public string UrlSponsor { get; set; }
+        public string LogoSponsor { get; set; }
+    }
 }

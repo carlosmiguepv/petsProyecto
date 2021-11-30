@@ -30,7 +30,7 @@ namespace pets.API.Controllers
         {
             var mascotas = await _mascotaRepository.GetMascotas();
 
-            var mascotasList = _mapper.Map<IEnumerable<CodigoDTO>>(mascotas);
+            var mascotasList = _mapper.Map<IEnumerable<MascotaDTO>>(mascotas);
 
             return Ok(mascotasList);
         }
@@ -76,6 +76,28 @@ namespace pets.API.Controllers
             if (!result)
                 return NotFound();
             return NoContent();
+        }
+
+        [HttpGet]
+        [Route("GetMascotas_43")]
+        public async Task<IActionResult> GetMascotas_43()
+        {
+            var mascotas = await _mascotaRepository.GetMascotas();
+
+            var mascotasList = _mapper.Map<IEnumerable<Mascota43DTO>>(mascotas);
+
+            return Ok(mascotasList);
+        }
+
+        [HttpGet]
+        [Route("GetMascotas_42")]
+        public async Task<IActionResult> GetMascotas_42()
+        {
+            var mascotas = await _mascotaRepository.GetMascotas();
+
+            var mascotasList = _mapper.Map<IEnumerable<Mascota42DTO>>(mascotas);
+
+            return Ok(mascotasList);
         }
     }
 }

@@ -27,7 +27,6 @@ namespace pets.Domain.Core.DTOs
         public string ApellidoAdministrador { get; set; }
         public string CelularAdministrador { get; set; }
         public string DirecciónUsuario { get; set; }
-        public DateTime? FechaNacimientoAdministrador { get; set; }
         public string CorreoAdministrador { get; set; }
         public string ContraseñaAdministrador { get; set; }
         public bool? GeneroAdministrador { get; set; }
