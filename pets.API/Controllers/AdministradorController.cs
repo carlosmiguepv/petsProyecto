@@ -43,8 +43,9 @@ namespace pets.API.Controllers
             var administrador = await _administradorRepository.GetAdministradoresById(id);
             if (administrador == null)
                 return NotFound();
-            var administradorDTO = _mapper.Map<AdministradorDTO>(administrador);
+            var administradorDTO = _mapper.Map<AdministradorDTO>(administrador); 
             return Ok(administradorDTO);
+
         }
 
         //Agregar
